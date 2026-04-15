@@ -60,6 +60,19 @@ flutter run -d chrome
 flutter build web --release
 ```
 
+## 🧩 Site estático HTML/CSS/JS
+
+Para testar a versão estática do site Atlas Industrial:
+
+```bash
+cd site
+python3 -m http.server 8000
+```
+
+Em seguida, abra no navegador:
+
+`http://127.0.0.1:8000`
+
 ## ☁️ CI/CD na Nuvem
 
 Este projeto utiliza **GitHub Actions** para executar testes, análise de código e builds automaticamente na nuvem, sem consumir recursos locais.
@@ -114,10 +127,14 @@ atlas_industrial/
 │   │   └── catalog_provider.dart     # Provider do catálogo
 │   └── theme/                         # Tema e estilos
 │       └── app_theme.dart            # Tema da aplicação
+├── site/                              # Site estático HTML/CSS/JS do Atlas Industrial
+│   ├── index.html                    # Página principal do catálogo
+│   ├── style.css                     # Estilos do site
+│   └── app.js                        # Lógica de busca e exibição de produtos
 ├── test/                              # Testes
 ├── .github/
 │   └── workflows/                     # GitHub Actions
-│       └── flutter-ci-cd.yml         # Pipeline CI/CD
+│       └── deploy.yml                # Pipeline de build & deploy
 └── pubspec.yaml                       # Dependências
 ```
 

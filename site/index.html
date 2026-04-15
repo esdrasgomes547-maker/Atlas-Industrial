@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Industrial | Catálogo de Peças</title>
+  <meta name="description" content="Atlas Industrial - Catálogo premium de peças para GLP e engenharia mecânica." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">AI</span>
+      <div>
+        <h1>Atlas Industrial</h1>
+        <p>Catálogo premium de peças para GLP e engenharia.</p>
+      </div>
+    </div>
+    <nav class="top-nav">
+      <a href="#catalog">Catálogo</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Peças industriais de alta performance</span>
+      <h2>Encontre válvulas, conexões, extensões e reguladores para sistemas GLP.</h2>
+      <p>Pesquisa rápida, filtros por categoria e informações técnicas para cada produto.</p>
+      <a class="btn btn-primary" href="#catalog">Explorar catálogo</a>
+    </div>
+    <div class="hero-image">
+      <div class="hero-box">
+        <h3>Catálogo em destaque</h3>
+        <p>Produtos selecionados com especificações, disponibilidade e preços claros.</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="catalog" class="catalog-section">
+      <div class="controls">
+        <div class="search-box">
+          <label for="searchInput">Buscar produto</label>
+          <input id="searchInput" type="search" placeholder="Digite nome, categoria ou tag" />
+        </div>
+        <div class="categories" id="categoryButtons"></div>
+      </div>
+
+      <div class="products-grid" id="productGrid"></div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div>
+        <h2>Por que escolher o Atlas Industrial?</h2>
+        <p>Somos especializados em componentes GLP com design robusto, materiais premium e engenharia de alta precisão.</p>
+      </div>
+      <div class="features-grid">
+        <article><h3>Alta qualidade</h3><p>Peças desenvolvidas para ambientes industriais rigorosos.</p></article>
+        <article><h3>Informações técnicas</h3><p>Especificações completas com pressão, material e conexão.</p></article>
+        <article><h3>Filtro inteligente</h3><p>Busca por nome, categoria e tags para encontrar o item certo rápido.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contato</h2>
+      <p>Quer saber mais? Entre em contato para solicitar orçamento ou suporte técnico.</p>
+      <div class="contact-cards">
+        <div><strong>E-mail</strong><p>contato@atlasindustrial.com</p></div>
+        <div><strong>Telefone</strong><p>+55 11 4000-0000</p></div>
+        <div><strong>Local</strong><p>São Paulo, Brasil</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Atlas Industrial • Catálogo de peças para GLP • 2026</p>
+  </footer>
+
+  <div class="modal-overlay hidden" id="productModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">×</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

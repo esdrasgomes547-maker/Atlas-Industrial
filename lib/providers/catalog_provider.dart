@@ -21,31 +21,31 @@ class CatalogProvider extends ChangeNotifier {
   void _initializeCatalog() {
     // Inicializar categorias
     _categories = [
-      Category(
+      ProductCategory(
         id: 'valves',
         name: 'Válvulas',
         icon: '🚫',
         description: 'Válvulas de GLP e derivados',
       ),
-      Category(
+      ProductCategory(
         id: 'connections',
         name: 'Conexões',
         icon: '🔗',
         description: 'Conexões e acoplamentos',
       ),
-      Category(
+      ProductCategory(
         id: 'extensions',
         name: 'Extensões',
         icon: '📏',
         description: 'Tubos e extensões',
       ),
-      Category(
+      ProductCategory(
         id: 'regulators',
         name: 'Reguladores',
         icon: '⚙️',
         description: 'Reguladores de pressão',
       ),
-      Category(
+      ProductCategory(
         id: 'accessories',
         name: 'Acessórios',
         icon: '🛠️',

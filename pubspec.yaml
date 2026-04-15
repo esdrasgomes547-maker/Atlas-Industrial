@@ -19,7 +19,7 @@ dependencies:
   google_fonts: ^7.0.0
 
   # State Management
-  provider: ^6.4.0
+  provider: ^6.0.0
 
   # Navigation & Routing
   go_router: ^14.2.0

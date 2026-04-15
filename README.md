@@ -69,6 +69,14 @@ Este projeto utiliza **GitHub Actions** para executar testes, análise de códig
 1. **Test & Analyze** - Testes unitários e análise estática
 2. **Build Web** - Compilação para web (pronto para deploy)
 3. **Code Quality** - Cobertura de testes e métricas
+4. **Deploy Web** - Publica o build web no GitHub Pages
+
+### Publicação Web
+
+- O site será publicado automaticamente na branch `gh-pages`
+- Após o primeiro push, o endereço deverá ser:
+  `https://esdrasgomes547-maker.github.io/Atlas-Industrial/`
+- Para testar em modo smartphone, abra o site no navegador e use o DevTools > Device Toolbar
 
 ### Como Usar
 

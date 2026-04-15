@@ -70,13 +70,13 @@ class Product {
   }
 }
 
-class Category {
+class ProductCategory {
   final String id;
   final String name;
   final String icon;
   final String description;
 
-  Category({
+  ProductCategory({
     required this.id,
     required this.name,
     required this.icon,

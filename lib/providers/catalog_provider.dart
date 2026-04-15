@@ -4,13 +4,13 @@ import '../models/product.dart';
 class CatalogProvider extends ChangeNotifier {
   List<Product> _allProducts = [];
   List<Product> _filteredProducts = [];
-  List<Category> _categories = [];
+  List<ProductCategory> _categories = [];
   String _selectedCategory = 'all';
   String _searchQuery = '';
 
   List<Product> get allProducts => _allProducts;
   List<Product> get filteredProducts => _filteredProducts;
-  List<Category> get categories => _categories;
+  List<ProductCategory> get categories => _categories;
   String get selectedCategory => _selectedCategory;
   String get searchQuery => _searchQuery;
 

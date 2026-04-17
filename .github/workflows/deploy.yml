@@ -34,7 +34,7 @@ jobs:
         run: flutter build web --release
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build/web
 
@@ -46,4 +46,4 @@ jobs:
       - uses: actions/configure-pages@v4
 
       - name: Deploy artifact
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
